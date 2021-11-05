@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(red, yellow, blue);
+    background-size: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: (3, 2fr) 1.2fr;
+    grid-template-rows: 1fr 2fr 1.5fr 1.2fr;
+    grid-gap: 20px;
+    padding: 0.5rem;
+    
+}
+
+.c {
+    background-color:black;
+    padding: 1rem;
+    opacity: 80%;
+    color:#D0CAB2;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+}
+
+.c:hover {
+    background-color: orange;
+    outline: 5px solid rgb(0,0,0);
+    outline-style: ridge;
+    outline-offset: -15px;
+    padding: 2rem;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.content1 {
+    grid-area: 1/1/2/3;
+    background-image: url("https://picsum.photos/id/1071/600/300");
+    background-image: cover;
+}
+
+.content8 {
+    grid-area: 1/3/2/5;
+    background-image: url("https://picsum.photos/id/1073/400/100");
+    background-size: cover;
+}
+
+.content2 {
+    grid-area: 2/1/3/2;
+    background-image: url("https://picsum.photos/id/1069/600/400");
+    background-size: cover;
+}
+
+.content3 {
+    grid-area: 2/2/3/3;
+    background-image: url("https://picsum.photos/id/1074/600/400");
+    background-size: cover;
+}
+
+.content4 {
+    grid-area: 2/3/3/4;
+    background-image: url("https://picsum.photos/id/1076/600/400");
+    background-size: cover;
+}
+
+.content5 {
+    grid-area: 2/4/4/5;
+    background-image: url("https://picsum.photos/id/1078/600/400");
+    background-size: cover;
+}
+
+.content6 {
+    grid-area: 3/1/4/4;
+    background-image: url("https://picsum.photos/id/1080/600/400");
+    background-size: cover;
+}
+
+.content7 {
+    grid-area: 4/1/5/3;
+    background-image: url("https://picsum.photos/id/1020/400/100");
+    background-size: cover;
+}
+
+.content9 {
+    grid-area: 4/3/5/5;
+    background-image: url("https://picsum.photos/id/1058/400/100");
+    background-size: cover;
+}
